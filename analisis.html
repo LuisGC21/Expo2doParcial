@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Grafos de Causa-Efecto y Técnicas del Análisis de Valores limites">
+    <meta name="keywords" content="">
+    <meta name="author" content="Badillo Olguin Jose Arturo, De la Rosa Lopez Miguel Enrique, Gress Cárdenas Luis Angel">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tecnica de Analisis de Valores</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="imagenes/UAEH.png" alt="UAEH" class="nav-uaeh">   
+            <div class="nav-menu">
+                <li class="nav-li"><a href="index.html" class="nav-a">Inicio</a></li>
+                <li class="nav-li"><a href="grafos.html" class="nav-a">Tecnica de Grafos</a></li>
+                <li class="nav-li"><a href="analisis.html" class="nav-a">Tecnica de Analisis de Valores</a></li>
+                <li class="nav-li"><a href="actividad.html" class="nav-a">Actividad</a></li>
+            </div>
+        </div>
+    </nav>
+    <section class="section-valores">
+        <section class="section">
+            <h1>Técnica de Análisis de Valores Limite</h1>
+            <section class="section-one">
+                <h2>¿Qué es?</h2>
+                <p>El análisis de valores limite es la técnica de diseño de pruebas de caja negra en la cual los casos de prueba son diseñados basándose en los valores límite</p>
+                <p>La técnica de análisis de los valores límite se basa en el hecho heurístico de que los errores tienden a producirse con más probabilidad en los valores extremos de los posibles valores de entrada.</p>
+                <p>Esta técnica, que puede considerarse una expansión de la idea de partición de equivalencia, se puede usar siempre que la entrada a analizar tenga definidos esos límites en la especificación de los requerimientos. En realidad no es que se pueda, sino que se debe usar en tales casos.</p>
+                <p>Los valores elegidos para los casos de prueba son justo aquellos que están por encima o por debajo de los márgenes de las clases de equivalencia.</p>
+                <p>Los valores límite no solo se exploran en los datos de entrada, sino que también pueden estudiar las condiciones de salida.</p>
+            </section>
+            <section class="section-two">
+                <h2>Aplicación del análisis de valores límite</h2>
+                <p>Si una condición para un dato de entrada <b>i</b> especifica un rango de valores definido como <b>n <= i <= m</b>, los casos de prueba resultantes de aplicar el análisis de valores límite corresponden a <b>n-1, n, n+1, m-1, m y m+1.</b></p>
+                <p>Por ejemplo, si el dato de entrada corresponde a un número que nos indica el día de la semana en el que estamos, deberíamos definir el rango de valores válidos como: <b>1 <= día <= 7</b>. En ese caso, los casos de prueba resultantes a aplicar serían <b>0, 1, 2, 6, 7 y 8</b>.</p>
+                <img class="img-valores" src="imagenes/valoreslimite.png" alt="">
+            </section>
+            <section class="section-three">
+                <h2>Valores límite en entradas con varios valores</h2>
+                <p>Cuando una entrada indica que se deben introducir varios valores, se deben diseñar casos de prueba considerando el número de valores como un rango de valores de forma que apliquemos a ese rango los valores límite para que el usuario tenga que introducir <b>n-1, n, n+1, m-1, m y m+1</b> valores.</p>
+            </section>
+            <section class="section-four">
+                <h2>Valores límite en los datos de salida</h2>
+                <p>Como he dicho antes, si te es posible también debes aplicar este tipo de pruebas a los datos de salida. Imagina que en el ejemplo último, la nota media que va a obtenerse como salida debe estar entre 0 y 10, deberías usar el análisis de valores límite con el fin de crear casos de prueba que generen los siguientes valores de notas medias: -1, 0, 1, 9, 10 y 11.</p>
+            </section>
+            <section class="section-five">
+                <h2>Proceso para el analisis de valores límites</h2>
+                <img class="img-procesos" src="imagenes/procesos.png" alt="Procesos para el analisis de Valores Límites">
+                <div class="div">
+                    <div class="div-valorinferior">
+                        <p>Valor límite inferior, valor menor al límite inferior, valor mayor al limite inferior</p>
+                        <img class="img-valor1" src="imagenes/valor1.png" alt="Valor límite inferior">
+                    </div>
+                    <div class="div-valorsuperior">
+                        <p>Valor límite superior, valor menor al límite superior, valor mayor al límite superior</p>
+                        <img class="img-valor2" src="imagenes/valor2.png" alt="Valor límite superior">
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+<footer>
+    <section class="section-integrantes">
+        Integrantes:
+            <ul>
+                <li class="li-integrantes">Badillo Olguin Jose Arturo</li>
+                <li class="li-integrantes">De la Rosa Lopez Miguel Enrique</li>
+                <li class="li-integrantes">Gress Cárdenas Luis Angel</li>
+            </ul>
+    </section>
+</footer>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Grafos de Causa-Efecto y Técnicas del Análisis de Valores limites">
+    <meta name="keywords" content="">
+    <meta name="author" content="Badillo Olguin Jose Arturo, De la Rosa Lopez Miguel Enrique, Gress Cárdenas Luis Angel">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tecnica de Grafos</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="imagenes/UAEH.png" alt="UAEH" class="nav-uaeh">   
+            <div class="nav-menu">
+                <li class="nav-li"><a href="index.html" class="nav-a">Inicio</a></li>
+                <li class="nav-li"><a href="grafos.html" class="nav-a">Tecnica de Grafos</a></li>
+                <li class="nav-li"><a href="analisis.html" class="nav-a">Tecnica de Analisis de Valores</a></li>
+                <li class="nav-li"><a href="actividad.html" class="nav-a">Actividad</a></li>
+            </div>
+        </div>
+    </nav>
+    <section class="section-grafos">
+        <section class="section">
+            <h1>Técnica de grafos de Causa-Efecto</h1>
+            <section class="section-one">
+                <h2>¿Que es?</h2>
+                <p>Es una técnica que permite al encargado de la prueba validar complejos conjuntos de acciones y condiciones.</p>
+                <p>Los grafos causa-efecto representan la relación lógica entre distintas causas y los posibles efectos. Para esto se listan las causas (entradas o acciones del usuario) y los efectos (salidas o acciones del sistema esperadas), y luego se unen indicando relaciones entre ellos.</p>
+            </section>
+            <section class="section-two">
+                <h2>Beneficios</h2>
+                <li class="li-beneficios">Nos ayuda a determinar las causas fundamentales de un problema o de calidad usando un enfoque estructurado.</li>
+                <li class="li-beneficios">Utiliza un formato ordenado, fácil de leer el diagrama las relaciones de causa y efecto.</li>
+                <li class="li-beneficios">Indica posibles causas de variación en un proceso.</li>
+                <li class="li-beneficios">En él se identifican las áreas, donde los datos deben ser recogidos para su posterior estudio.</li>
+                <li class="li-beneficios">Se fomenta la participación del equipo y utiliza el conocimiento del equipo del proceso.</li>
+                <li class="li-beneficios">Aumenta el conocimiento del proceso, ayudando a todos a aprender más acerca de los factores en el trabajo y cómo se relacionan.</li>
+            </section>
+            <section class="section-three">
+                <h2>Pasos</h2>
+                <p>Es una técnica de casos de prueba que proporciona una concisa representación de las condiciones lógicas y sus correspondientes acciones. La técnica sigue cuatro pasos:</p>
+                <li class="li-pasos">Se listan para un módulo las causas (condiciones de entrada) y los efectos (acciones), asignando un identificador a cada uno de ellos.</li>
+                <li class="li-pasos">Se desarrolla un grafo Causa-Efecto.</li>
+                <li class="li-pasos">Se convierte el grafo en una tabla de decisión.</li>
+                <li class="li-pasos">Se convierten las reglas de la tabla de decisión a casos de prueba.</li>
+                <img class="img-pasos" src="imagenes/pasos.png" alt="Pasos">
+            </section>
+            <section class="section-four">
+                <h2>Construcción</h2>
+                <li class="li-construccion">Dividir la especificación en piezas que sean "trabajables". No intentar crear un simple grafo para toda la especificación.</li>
+                <li class="li-construccion">Identificar Causas y Efectos</li>
+                <li class="li-construccion">Una causa es una única condición de entrada.</li>
+                <li class="li-construccion">Un efecto es una condición de salida o transformación del sistema.</li>
+                <li class="li-construccion">Traducir las relaciones semánticas en cada segmento en relaciones booleanas enlazando causas con efectos. Es decir, construir los grafos.</li>
+                <li class="li-construccion">Colocar las restricciones que se aplican a las causas y efectos.</li>
+                <img class="img-construccion" src="imagenes/restriccion.png" alt="Restricciones sobre las causas">
+            </section>
+        </section>
+    </section>
+</body>
+<footer>
+    <section class="section-integrantes">
+        Integrantes:
+            <ul>
+                <li class="li-integrantes">Badillo Olguin Jose Arturo</li>
+                <li class="li-integrantes">De la Rosa Lopez Miguel Enrique</li>
+                <li class="li-integrantes">Gress Cárdenas Luis Angel</li>
+            </ul>
+    </section>
+</footer>
+</html>
